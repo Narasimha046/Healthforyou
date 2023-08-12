@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f67f2f2941.js" crossorigin="anonymous"></script>
+        <title>
+            customer Login page
+        </title>
+    </head>
+    <body>
+        
+        <div class="cuslog">
+            <div class="home">
+                <h7 ><a href="file:///D:/Programs/New/page1.html">Home</a></h7>
+               </div>
+            <div class="signup">
+                <h1 id="title">Sign Up as Customer</h1>
+                <form>
+                    <div class="input-group">
+                        <div class="inpf" id="namef">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="inpf">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="email">
+                        </div>
+                        <div class="inpf">
+                            <i class="fa-sharp fa-solid fa-key"></i>
+                            <input type="password" placeholder="password">
+                        </div>
+                        <p>forgot password<a href="#">click here</a></p>
+                    </div>
+                    <div class="btnf">
+                        <button type="button" id="signupbtn" ><a href="file:///D:/Programs/New/home.html">Sign Up</a></button>
+                        <button type="button" id="signinbtn" class="disable"  ><a href="file:///D:/Programs/New/home.html">Sign In</a></button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+<script>
+    let signupbtn=document.getElementById("signupbtn");
+    let signinbtn=document.getElementById("signinbtn");
+    let namef=document.getElementById("namef");
+    let title=document.getElementById("title");
+    signinbtn.onclick= function(){
+        namef.style.maxHeight="0";
+        title.innerHTML ="Sign In as Customer";
+        signupbtn.classList.add("disable");
+        signinbtn.classList.remove("disable");
+
+    }
+    signupbtn.onclick= function(){
+        namef.style.maxHeight="60px";
+        title.innerHTML ="Sign Un as Customer";
+        signupbtn.classList.remove("disable");
+        signinbtn.classList.add("disable");
+
+    }
+    
+    </script>
+    </body>
+</html>
